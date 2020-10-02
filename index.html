@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div >
+        <input type="hidden" id="index" name="">
+        <input type="text" id="fullname" placeholder="Full name"> <br>
+        <input type="text" id="email" placeholder="Email"> <br>
+        <input type="text" id="phone" placeholder="Phone"> <br>
+        <input type="text" id="pics" placeholder="Profile Picture[0-8]"> <br>
+    </div>
+
+    <button class="add-button" onClick="addNewUser()" >Add new user</button>
+    <button class="add-button" onClick="updateUser()" >Update user</button>
+    <input type="text" id="searchItems" placeholder="Search for Users">
+    <button class="button" onClick="search()" >Find Single Record</button>
+    <button class="button" onClick="searchAll()">Find Several Record</button>
+    <button onClick="searchPartMatch()">Find Part Record</button>
+
+    <div id="users">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
